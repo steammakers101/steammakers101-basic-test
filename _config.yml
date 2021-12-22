@@ -1,34 +1,36 @@
-# Your Name or Company
-title: Goyang Free School forest
+# Site settings
+title: Thomas Zühlke
+description: 'Business Card Page'
+url: 'http://thomas.zuehlke.family'
+baseurl: ''
+profilepic: '/images/tzuehlke.jpg'
+bkimage: '/images/bk1.jpg'
+google_analytics: UA-XXXXXX-X
+font_awesome: 'XXXXXXXXXX.js'
 
-# Description of your website. This is used for social sharing.
-description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
+author:
+  name: 'Thomas Zühlke'
+  email: info@thomas-zuehlke.de
+  twitter_username: thomzuehlke
+#  facebook_username: joshgerdes
+  github_username:  tzuehlke
+  linkedin_username:  thomas-zühlke-889182165
+  meetup_name: Azure-Meetup-Rostock-MV
 
-# A brief blurb about yourself
-content: 누군가의 아름다운 음악들이 잠자고 있는곳. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
-
-# Add your social links
-social:
-  - platform: track 1
-    url: https://github.com/brianmaierjr
-  - platform: track 2
-    url: https://facebook.com/brianmaierjr
-  - platform: track 3
-    url: https://twitter.com/brianmaierjr
-  - platform:  track 4
-    url: brianmaierjr
-
-# General settings
-# url: http://brianmaierjr.github.com/uni
-# baseurl: "/uni" 
+# Build settings
+destination: _site
 markdown: kramdown
-sharing_image: share.jpg
-google_analytics: "UA-58263416-1" # google analytics tracking
+highlighter: rouge
 
-#### LAYOUT OPTIONS #####
+sass:
+    sass_dir: _sass
+    style: compressed
 
-# Half layout
-half_side: right
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-# Full layout
-full_text_position: right # left, right or center
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png']

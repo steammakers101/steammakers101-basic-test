@@ -1,59 +1,130 @@
-# Resume template
+![Uni Jekyll Theme](/assets/img/share.jpg)
 
-*A simple Jekyll + GitHub Pages powered resume template.*
+# Uni – A one-page Jekyll theme
 
-![img](images/screenshot.png)
+[View Half Demo](http://brianmaierjr.com/uni/) | [View Full Demo](http://brianmaierjr.com/uni/full) | [View Card Demo](http://brianmaierjr.com/uni/card)
 
-## Docs
+## Features
 
-### Running locally
+* Minimal, One-Page Design
+* Fast and responsive
+* Flexible
+* Built using these tools:
+  * GULP
+  * SASS
+  * BROWSERSYNC
+  * AUTOPREFIXER
+* A modular, type scale
+* 3 different layouts with additional options
+* Responsive Images for performance
+* Social Meta Tags
 
-To test locally, run the following in your terminal:
+## Browser Support
 
-1. Clone repo locally
-1. `bundle install`
-2. `bundle exec jekyll serve`
-3. Open your browser to `localhost:4000`
+This theme will look great and work in most newer browsers. If you see an issue please feel free to [contact me](mailto:brimaidesigns@gmail.com).
 
-### Customizing
+---
 
-First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
+## Setup
 
-#### Options/configuration
+1. [Install Jekyll](http://jekyllrb.com)
+2. [Install Bundler](http://bundler.io/)
+3. Run `bundle install`
+4. Install gulp dependencies by running `npm install`
+5. Run Jekyll and watch files by running `bundle exec gulp`
 
-Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
+Please note that any changes made to the `config.yml` will require that you stop gulp and start it again.
 
-[...write these out...]
+---
 
-#### Editing content
+## Site/Layout Settings
 
-Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
+The main settings can be found inside the `_config.yml` file:
 
-### Publishing to GitHub Pages for free
+* **title:** you or your company's name
+* **description:** description of your site that will be used when your site is shared or posted on social media
+* **sharing_image:** name of your image (example.jpg). This image should be placed in the `assets/img/` folder
+* **content:** a brief blurb about yourself
+* **url:** your url
+* **social** diverse social media usernames (optional)
+  * **platform**: display name for social media or external link
+  * **url**: destination for the link
+* **google_analytics** Google Analytics key (optional)
 
-[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
+---
 
-### Configuring with your own domain name
+![Uni Jekyll Theme](layout--half.jpg)
 
-To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
+## Half Layout
 
-### Themes
+* **half_side:** which side of the page your content is on [left or right]
 
-Right now resume-template only has one theme. More are coming :soon: though. :heart:
+---
 
-## Roadmap
+![Uni Jekyll Theme](layout--full.jpg)
 
-A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
+## Full layout
 
-## Contributing
+* **full_text_position:** where on the page the text will appear [left, center, or right]
 
-If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
+---
 
-1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
-2. Fork the project, make changes, and submit a pull request
+![Uni Jekyll Theme](layout--card.jpg)
 
-## License
+## Card layout
 
-The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
+The background image and other style customizations can be changed in `assets/scss/layouts/_card.scss`
 
-Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.
+---
+
+## Further Customizations
+
+### Change Layout
+
+By default, Uni is set to use the `half` layout. To change the `layout` change the front matter in `index.html`
+
+For example, the layout below is using the `full` layout. The other options available are `half` and `card`.
+
+```
+---
+layout: full
+title: Uni – A one-page Jekyll theme
+---
+```
+
+### Styling
+
+While running `bundle exec gulp` modify any of the files in the `assets/scss/` folder and your browser will update automatically. No reload required!
+
+The layouts all have their own stylesheets found in `assets/scss/layouts/`. This is where images for each of the three layouts can be found. In addition, this is where you can change text color, layout, etc.
+
+#### Primary color
+
+The primary color is used for headings, accents, and buttons. It can be changed by modifying the `assets/scss/base/_config.scss` file.
+
+### Add Content
+
+Add content in `config.yml` or alter `index.html` and change `{{ content }}` to be whatever you want.
+
+### Imagery
+
+As stated above, the images are set in the respective stylesheets found in `assets/scss/layouts/`.
+
+We are using responsive images that require three different image sizes. This allows the browser to serve the appropriate image based on the screen size. Recommended image widths are:
+
+* #### Small: 768px wide
+* #### Medium: 1200px wide
+* #### Large: 1600px wide
+
+To replace the images, modify the names in the `responsivebackground` mixin as shown below.
+*Make sure to include the file extension!*
+
+```
+@include responsivebackground("half-sm.jpg", "half-md.jpg", "half-lg.jpg");
+```
+
+When uploading images please keep file size in mind. For optimizing, we recommend using [TinyPNG](https://tinypng.com) and [TinyJPG](https://tinyjpg.com).
+
+### Favicon
+
+To add your own favicon, replace the image found at `assets/img/favicon.png`.

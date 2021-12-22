@@ -1,76 +1,59 @@
-# glas
-Glas - Rails on Ruby - Jekyll Theme 
-Preview: http://www.spaceg.github.io
+# Resume template
 
-![Alt text](https://raw.githubusercontent.com/SpaceG/glas/master/img/glas_github.png "glas")
+*A simple Jekyll + GitHub Pages powered resume template.*
 
+![img](images/screenshot.png)
 
-GLAS  - DOM Structure
-### Structure ###
-<pre>
-.  
-|-- .sass-cache  
-|-- _data  
-|   |-- organisers.yml
-|-- _includes 
-|   |-- footer.html  
-|   |-- head.html 
-|   `-- header.html   
-|-- _layouts  
-|   |-- about.html  
-|   |-- archive.html 
-|   |-- default.html 
-|   |-- page.html  
-|   `-- post.html  
-|-- _posts  
-|   |-- 2016-01-18-gem-npm-ruby-gems-node.js.md 
-|   `-- 2016-01-18-create-commandlines-for-your-app.md
-|-- _sass
-|-- _assets  
-|   |-- css  
-|   |-- fonts
-|   |-- img
-|   |-- js 
-|   `-- post.html  
-|-- _config.yml 
-|-- _feed.yml       
-`-- index.html  
-</pre>
+## Docs
 
+### Running locally
 
+To test locally, run the following in your terminal:
 
-Clone to Desktop
-<code>git clone https://github.com/SpaceG/glas.git  </code>
-Delete the cname file. 
+1. Clone repo locally
+1. `bundle install`
+2. `bundle exec jekyll serve`
+3. Open your browser to `localhost:4000`
 
-by The Way Fork and Star this Theme. Thanks a lot for your Support. 
-if you have any question, take a issue. 
+### Customizing
 
+First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
 
-<code>cd Desktop </code><br>
-<code>cd glas </code><br>
-<code>$ jekyll serve </code>
+#### Options/configuration
 
-watch your localhost <code><strong>127.0.0.1:8000 </strong> </code> 
+Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
 
-The MIT License (MIT)
+[...write these out...]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#### Editing content
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Publishing to GitHub Pages for free
 
+[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
 
+### Configuring with your own domain name
+
+To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
+
+### Themes
+
+Right now resume-template only has one theme. More are coming :soon: though. :heart:
+
+## Roadmap
+
+A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
+
+## Contributing
+
+If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
+
+1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
+2. Fork the project, make changes, and submit a pull request
+
+## License
+
+The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
+
+Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.

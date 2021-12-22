@@ -1,21 +1,21 @@
 # Your Name or Company
-title: Uni Kravitz
+title: Goyang Free School
 
 # Description of your website. This is used for social sharing.
 description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
 
 # A brief blurb about yourself
-content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+content: 누군가의 아름다운 음악들이 잠자고 있는곳. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
 
 # Add your social links
 social:
-  - platform: github
+  - platform: track 1
     url: https://github.com/brianmaierjr
-  - platform: facebook
+  - platform: track 2
     url: https://facebook.com/brianmaierjr
-  - platform: twitter
+  - platform: track 3
     url: https://twitter.com/brianmaierjr
-  - platform: linkedin
+  - platform:  track 4
     url: brianmaierjr
 
 # General settings
